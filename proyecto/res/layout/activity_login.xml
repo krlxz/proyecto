@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Login" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_launcher"
+        android:width="200dp" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/estilocaja"
+        android:ems="10"
+        android:hint="Email" 
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="15dp"
+        android:width="200dp" />
+
+    <EditText
+        android:id="@+id/txtcontrasenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtemail"
+        android:layout_below="@+id/txtemail"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/estilocaja"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:imeActionId="@+id/login"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="15dp"
+        android:width="200dp" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignRight="@+id/txtcontrasenia"
+        android:layout_below="@+id/txtcontrasenia"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/estilo"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Login"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:width="dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtemail"
+        android:layout_toRightOf="@+id/txtemail"
+        android:textSize="15dp"
+        android:text=" @unl.edu.ec" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/TableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <TableRow
+            android:layout_weight="1"
+			android:gravity="center"
+			android:paddingLeft="20px"
+			android:paddingRight="20px"
+			android:paddingBottom = "10px" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/carlos" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carlos A. Salas M."
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textSize="10dp"
+                    
+                    android:layout_gravity="center"
+                    android:text="Estudiante Ecuatoriano, Actualmente cursa la carrera de Ingeniería en Sistemas de la Universidad Nacional de Loja, constando en el 9no módulo de la misma. Entre sus fortalezas están trabajo en equipo, fácil aprendizaje, entre sus aficiones esta, la programación orientada a objetos guiándose hacia la creación de aplicaciones destinada a dispositivos móviles. Teniendo como metodología la programación extrema." >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Email: casalasm@unl.edu.ec"
+                    android:textSize="12dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
